@@ -1,0 +1,45 @@
+p, ol {
+    font-size: 20px;
+}
+
+#title {
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#subtitle {
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: #006EB6;
+    padding-bottom: 0px;
+}
+
+.italics {
+    font-style: italic;
+}
+
+body {
+    width: 600px;
+    line-height: 1.5;
+    margin: 0px auto;
+}
+
+main {
+    margin: 40px 0;
+}
+
+li {
+    padding-bottom: 15px;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
