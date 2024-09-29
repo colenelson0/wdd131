@@ -43,3 +43,12 @@ img {
     width: 150px;
     margin: 0 auto;
 }
+
+.dark {
+    color: white;
+    background-color: #333;
+}
+
+.dark #subtitle {
+    color: #4F9ACF;
+}
