@@ -21,7 +21,8 @@ function viewHandler(event) {
     let imgSource = clickedImg.src;
     imgSource = imgSource.split("-")[0];
 	// construct the new image file name by adding "-full.jpeg" to the first part of the array from the previous step
-    imgSource = imgSource + "-full.jpeg";
+    imgSource = imgSource + "-full.jpg";
+    console.log(imgSource)
     const alt = "Cool picture, higher resolution";
 	// insert the viewerTemplate into the top of the body element
 	// (element.insertAdjacentHTML("afterbegin", htmltoinsert))
@@ -33,7 +34,7 @@ function viewHandler(event) {
 }
 
 function closeViewer() {
-    const viewer = querySelector(".img-viewer");
+    const viewer = document.querySelector(".img-viewer");
     viewer.remove();
 }
 

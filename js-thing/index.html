@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            color: magenta
+        }
+        li {
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+        <li>Blank</li>
+    </ul>
+
+    <script>
+        // variables
+        const a = 1
+        let b = 2
+        var c = 3
+
+        const obj = {
+            name: "John",
+
+            getName: () => {
+                return obj.name
+            }
+        }
+
+        // Old school way
+        function sum(a, b) {
+            return a + b
+        }
+
+        const sum2 = (a, b) => a + b // lambda function
+
+        const sum3 = function(a, b) {
+            return a + b
+        }
+
+        console.log(sum(b, c) + sum2(a, c) + sum3(a, b))
+        console.log(obj.getName())
+
+        const listItems = document.querySelectorAll('li')
+        let i = 1
+        // element = each element from the list listItems
+        listItems.forEach((element) => {
+            element.innerText = " No. " + i
+            i++
+        })
+
+    </script>
+</body>
+</html>
