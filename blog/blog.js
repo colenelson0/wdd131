@@ -23,5 +23,43 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
-	}
+	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb 12, 2022",
+		description:
+		"A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his \"Aunt Pol\" and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+		imgSrc:
+		"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐"
+		}
 ]
+
+const articleTemplate = (post) => {
+	return `<article>
+        <section class="left-section">
+		<p class="post-date">${post.date}</p>
+		<p class="book-ages">${post.ages}</p>
+		<p class="book-genre">${post.genre}</p>
+		<p class="book-stars">${post.stars}</p>
+		</section>
+		<section class="right-section">
+		<h2 class="book-title">${post.title}</h2>
+		<figure>
+		<img src="${post.imgSrc}" alt="${post.imgAlt}">
+		</figure>
+		<p class="book-desc">${post.description}</p>
+		</section>
+		</article>
+	`;
+}
+
+const reviewColumn = document.getElementById("review-column")
+
+articles.forEach(element => {
+	reviewColumn.insertAdjacentHTML("beforeend", articleTemplate(element));
+});
