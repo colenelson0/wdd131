@@ -1,0 +1,97 @@
+form {
+    height: 360px;
+    width: 480px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 24px 1fr 24px 36px;
+    gap: 20px;
+}
+
+p, label {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#cardfront, #cardback {
+    background-color: gainsboro;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.289);
+}
+
+#cardfront {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 25px;
+}
+
+#card-num-container {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#card-holder-container {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#expiration-container {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12px;
+}
+
+#expiration-container label {
+    grid-column: 1 / 3;
+}
+
+#cardback {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    padding: 25px 0;
+}
+
+#stripe {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: rgb(80, 80, 80);
+    height: 30%;
+}
+
+#card-cvc-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+#submit {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+p {
+    align-self: center;
+}
+
+img {
+    justify-self: end;
+    align-self: center;
+}
+
+label {
+    align-self: end;
+}
