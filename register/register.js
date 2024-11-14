@@ -40,7 +40,6 @@ const participantTemplate = (count) => {
 
 let participants = 1;
 const addButton = document.getElementById("add");
-const submitButton = document.getElementById("submitButton");
 const form = document.querySelector("form");
 const summary = document.getElementById("summary");
 
@@ -90,4 +89,4 @@ function submitForm(event) {
     form.style.display = "none";
 }
 
-submitButton.addEventListener("click", submitForm);
+form.addEventListener("submit", submitForm);
