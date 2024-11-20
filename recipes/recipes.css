@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+body {
+    margin: 0;
+}
+
+#logo h1, .recipe-name {
+    font-family: 'Handlee', sans-serif;
+}
+
+header {
+    margin: 0 20px;
+    border-bottom: 1px solid gray;
+}
+
+input, li, p, #freepik {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 30px 20px;
+}
+
+#logo img {
+    width: 100px;
+}
+
+#logo h1 {
+    font-size: 45px;
+    margin: 12px 0;
+}
+
+form {
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+form input {
+    flex-grow: 1;
+    border-width: 0;
+    border-right: 1px solid black;
+    font-size: 20px;
+}
+
+form button {
+    height: fit-content;
+    background-color: transparent;
+    border-width: 0;
+}
+
+#search-icon {
+    height: 30px;
+}
+
+main {
+    margin: 20px 40px;
+}
+
+article {
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    margin: 20px 0;
+    padding: 25px;
+}
+
+.recipe-image {
+    width: 100%;
+}
+
+li, .recipe-description {
+    font-size: 20px;
+}
+
+.recipe-tags {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recipe-tags li {
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 5px 12px;
+}
+
+.recipe-name {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.icon-star, .icon-star-empty {
+    font-size: 25px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+}
+
+.recipe-name, #freepik {
+    color: rgb(0, 106, 205);
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+}
+
+.social-icon {
+    width: 50px;
+}
+
+@media (max-width: 580px) {
+    article {
+        flex-direction: column;
+    }
+
+    .recipe-description {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+}

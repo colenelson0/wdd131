@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeBook</title>
+    <link rel="stylesheet" href="recipes.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/recipe-book.png" alt="RecipeBook logo">
+            <h1>RecipeBook</h1>
+        </div>
+        <form>
+            <input type="text" name="search" id="search" placeholder="Find a recipe">
+            <button type="submit" aria-label="Recipe search">
+                <img src="images/search.svg" alt="" id="search-icon">
+            </button>
+        </form>
+    </header>
+    <main>
+        <article>
+            <section>
+                <img src="./images/roasted-potatoes.webp" alt="Oven Roasted potato slices" class="recipe-image">
+            </section>
+            <section>
+                <ul class="recipe-tags">
+                    <li>Potatoes</li>
+                    <li>side</li>
+                </ul>
+                <h2 class="recipe-name">Oven Roasted potato slices</h2>
+                <span class="recipe-rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+                <p class="recipe-description">Easy and delicious oven roasted potatoes that go great with almost anything.</p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons" id="freepik">Recipe icons created by Freepik - Flaticon</a>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon" class="social-icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon" class="social-icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon" class="social-icon"></a>
+        </div>
+    </footer>
+</body>
+</html>
