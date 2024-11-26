@@ -79,7 +79,7 @@ function sortFunction(a, b) {
 }
 
 function filterRecipes(query) {
-    const filtered = recipes.filter(filterFunction(query))
+    const filtered = recipes.filter((recipe) => (filterFunction(recipe, query)))
     const sorted = filtered.sort(sortFunction);
     return sorted;
 }
