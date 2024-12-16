@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDrabbit</title>
+    <meta name="description" content="This website is an online store for purchasing secondhand CDs.">
+    <meta name="author" content="Cole Nelson">
+    <link rel="stylesheet" href="style.css">
+    <script src="cdrabbit.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <figure id="web-logo">
+            <img src="./images/cdrabbit.png" alt="CDrabbit design logo">
+            <h1>CDrabbit</h1>
+        </figure>
+        <nav id="site-nav">
+            <a href="index.html">Home</a>
+            <a href="mycart.html">My Cart</a>
+        </nav>
+    </header>
+    <main>
+        <section id="signup-ad">
+            <h2>Need an account?</h2>
+            <p>Sign up for a CDrabbit account today for a 10% discount on your first purchase!</p>
+            <div class="signup-container">
+                <button class="signup">Sign up</button>
+                <button class="login">Login</button>
+            </div>
+        </section>
+        <section id="homecontent-container">
+            <form role="search" id="search-form">
+                <input type="search" name="q" id="search-input" placeholder="Find a CD..." aria-label="Search for CD">
+                <button type="submit" id="search-button">Search</button>
+            </form>
+            <section id="query-cd">
+                <h2 id="query-header">Results for (query)</h2>
+                <article class="query-result">
+                    <img src="cd-img3.webp" alt="CD image" class="query-cd-img">
+                    <div class="query-cd-info">
+                        <h3 class="query-cd-title">Search Album A, (YYYY)</h3>
+                        <h3 class="query-cd-artist">by Artist Z</h3>
+                        <p>Label A</p>
+                        <p>Rating: #/5</p>
+                        <p>Sellers: #</p>
+                        <p>Best price: $##.##</p>
+                        <button class="gimme">Gimme</button>
+                    </div>
+                </article>
+            </section>
+            <section id="featured-cds">
+                <section id="toprated">
+                    <h2 class="featured-header">Top rated</h2>
+                    <div id="top-cds"></div>
+                </section>
+                <section id="sweetdeals">
+                    <h2 class="featured-header">Sweet deals</h2>
+                    <div id="cheap-cds"></div>
+                </section>
+            </section>
+        </section>
+        <section id="ourstory">
+            <img src="./images/story-img.webp" alt="A nice picture of home">
+            <div id="story-text">
+                <h2>Our story</h2>
+                <p>CDrabbit was established in 2024 by web developer and part-time music producer, Cole Nelson. As the general population continues to depend more on streaming services and less on physical media, the need for preservation grows as well. Our goal is to make music CDs easier to access so that music lovers can cherish their favorite songs fear of them disappearing from streaming services.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="site-end">
+            <p>Cole Nelson, 2024</p>
+            <a href="site-plan.html">Site plan</a>
+        </div>
+    </footer>
+</body>
+</html>
