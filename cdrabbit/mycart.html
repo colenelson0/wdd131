@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDrabbit</title>
+    <meta name="description" content="This website is an online store for purchasing secondhand CDs.">
+    <meta name="author" content="Cole Nelson">
+    <link rel="stylesheet" href="mycart.css">
+    <script src="cdrabbit.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <figure id="web-logo">
+            <img src="./images/cdrabbit.png" alt="CDrabbit design logo">
+            <h1>CDrabbit</h1>
+        </figure>
+        <nav id="site-nav">
+            <a href="index.html">Home</a>
+            <a href="mycart.html">My Cart</a>
+        </nav>
+    </header>
+    <main>
+        <section id="mycart-header">
+            <h1>My Cart</h1>
+            <div class="signup-container">
+                <button class="signup">Sign up</button>
+                <button class="login">Login</button>
+            </div>
+        </section>
+        <section id="homecontent-container">
+            <section id="cart-end">
+                <div id="disclaimer">
+                    <h2>Disclaimer</h2>
+                    <p>Orders containing items from more than one seller will require multiple shipping fees. Refunds on missing or damaged items must be completed by the seller. If the seller fails to take accountability for an unfulfilled order, please send us a report so that we can help resolve the dispute.</p>
+                </div>
+                <div id="total-fees">
+                    <div id="fees-txt">
+                        <h3>Subtotal:</h3>
+                        <p>$##.##</p>
+                        <h3>Shipping:</h3>
+                        <p>$##.##</p>
+                        <h3>Tax:</h3>
+                        <p>$##.##</p>
+                        <h2>Total:</h2>
+                        <p>$##.##</p>
+                    </div>
+                    <button id="checkout">Check out</button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div id="site-end">
+            <p>Cole Nelson, 2024</p>
+            <a href="site-plan.html">Site plan</a>
+        </div>
+    </footer>
+</body>
+</html>

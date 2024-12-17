@@ -1,7 +1,7 @@
 import cds from './cd.mjs';
 
-const topCDs = document.getElementById("top-cds");
-const cheapCDs = document.getElementById("cheap-cds");
+const topCDs = document.querySelector("#top-cds");
+const cheapCDs = document.querySelector("#cheap-cds");
 
 function GetQueryTemplate(cd) {
     return `<article class="query-result">
